@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyTitle>QSB Multiple Ships</AssemblyTitle>
+    <Product>QSB Multiple Ships</Product>
+    <Description>Multiple ships addon for Quantum Space Buddies</Description>
+    <OutputPath Condition="Exists('$(OwmlDir)')">$(OwmlDir)\Mods\_nebula.QSBMultipleShips</OutputPath>
+    <NoWarn>CS1998;CS0649</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OuterWildsGameLibs" Version="1.1.13.456" />
+    <PackageReference Include="OWML" Version="2.9.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Mirror">
+      <HintPath>..\..\..\..\AppData\Roaming\OuterWildsModManager\OWML\Mods\Raicuparta.QuantumSpaceBuddies\Mirror.dll</HintPath>
+    </Reference>
+    <Reference Include="QSB">
+      <HintPath>..\..\..\..\AppData\Roaming\OuterWildsModManager\OWML\Mods\Raicuparta.QuantumSpaceBuddies\QSB.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="manifest.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

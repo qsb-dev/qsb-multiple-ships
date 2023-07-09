@@ -1,0 +1,9 @@
+{
+  "filename": "QSBMultipleShips.dll",
+  "author": "_nebula",
+  "name": "QSB Multiple Ships",
+  "uniqueName": "_nebula.QSBMultipleShips",
+  "version": "0.1.0",
+  "owmlVersion": "2.9.3",
+  "dependencies": [ "Raicuparta.QuantumSpaceBuddies" ]
+}
